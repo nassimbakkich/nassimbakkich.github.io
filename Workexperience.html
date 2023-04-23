@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    	<link rel="stylesheet" href="Workexperiencestyle.css">
+  </head>
+  <body>
+    <header>
+  		<nav class= "originalnav">
+  			<ul class= "originalul">
+  				<li class = "originalli"><a class = "originala"href="index.html">Home</a></li>
+  				<li class = "originalli"><a class = "originala"href="about.html">About</a></li>
+  				<li class = "originalli"><a class = "originala"href="Projects.html">Projects</a></li>
+          <li class = "originalli"><a class = "originala"href="Workexperience.html">Workexperience</a></li>
+  				<li class = "originalli"><a class = "originala"href="contact.html">Contact</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+    <div class="navdiv">
+      <ul>
+        <li>
+          <a href="#">Codefever</a>
+          <ul class="submenu">
+            <li><button onclick="myFunctionJob1()">Info</button></li>
+
+          </ul>
+        </li>
+
+    </div>
+<script>
+function myFunctionJob1() {
+var x = document.getElementById("Job1");
+if (x.style.display === "block") {
+x.style.display = "none";
+} else {
+x.style.display = "block";
+}
+}
+
+
+</script>
+
+<div id="Job1">
+  <p>My first work experience was at CodeFever , CodeFever is a company that teaches little kids programming in a fun and engaging way. I worked there for about 3 years (from 16 until i was 19). I think i learned a lot during this job because i learned to teach some basic programming concepts in a way that even little kids could understand it and i also learned to work with my collegues which i will need given that a lot of coding jobs are set in a team setting.</p>
+  <img id="imageJob1"  src="https://res.cloudinary.com/studentbe/image/upload/f_auto,fl_progressive,q_auto:good,w_800/company_logos_383351_1576242287">
+</div>
+
+
+  </body>
+</html>
