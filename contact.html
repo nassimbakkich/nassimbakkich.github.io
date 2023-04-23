@@ -18,25 +18,73 @@
       </nav>
     </header>
 
-	<form
-  action="https://formspree.io/f/xvondwza"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  
-  <button type="submit">Send</button>
-</form>
+	<div class="container">
+		<h1>Contact Me</h1>
+		<form id="contact-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
 
-	
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+	</div>
+
+	<script>
+    const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	sendMessage();
+});
+
+function sendMessage() {
+	const name = document.getElementById('name').value;
+	const email = document.getElementById('email').value;
+	const message = document.getElementById('message').value;
+
+  // create a new XMLHttpRequest object
+  const xhr = new XMLHttpRequest();
+
+  // prepare the HTTP request
+  xhr.open('POST', 'send-email.php', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+  // send the form data to the PHP script
+  xhr.send(`name=${name}&email=${email}&message=${message}`);
+
+  // handle the response from the PHP script
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        alert(`Thank you, ${name}! Your message has been sent.`);
+        form.reset();
+      } else {
+        alert(`There was a problem sending your message. Please try again.`);
+      }
+    }
+  };
+}
+
+	alert(`Thank you, ${name}! Your message has been sent.`);
+	form.reset();
+}
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	sendMessage();
+});
 
 
+  </script>
+
+</body>
+</html>
 
   </body>
 </html>
