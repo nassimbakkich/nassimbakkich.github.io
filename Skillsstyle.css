@@ -1,0 +1,106 @@
+.navdiv ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navdiv ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navdiv ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navdiv ul li:hover > .submenu {
+  display: block;
+}
+
+.navdiv ul .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navdiv ul .submenu li {
+  display: block;
+}
+
+.navdiv ul .submenu li a {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navdiv ul .submenu li:hover {
+  background-color: #f0f0f0;
+}
+
+.navdiv ul .submenu li:first-child a {
+  border-top: 1px solid #ccc;
+}
+
+.navdiv ul .submenu li:last-child a {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+header {
+	background-color: #000000;
+	padding: 20px;
+}
+.originalnav .originalul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.originalnav .originalli {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.originalnav .originala {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.originalnav .originala:hover {
+	text-decoration: underline;
+}
+
+
+body{
+  background-color: #363636;
+}
+
+#Skill1{
+border-radius: 25px;
+display: none;
+background-color: #068b91;
+height: 350px;
+margin: auto;
+width: 50%;
+border: 3px solid;
+padding: 10px;
+}
+#imageSkill1{
+border-radius: 25px;
+height: 200px;
+width: 50%;
+}
+
+
+p{
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+}
