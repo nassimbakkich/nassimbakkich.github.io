@@ -7,11 +7,13 @@ body {
 }
 
 header {
+	margin:0;
 	background-color: #000000;
 	padding: 20px;
 }
 
 nav {
+	margin:0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
