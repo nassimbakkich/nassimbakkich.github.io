@@ -14,6 +14,7 @@
   padding: 10px;
   color: white;
   text-decoration: none;
+  float:left;
 }
 
 .navdiv ul li:hover > .submenu {
