@@ -99,6 +99,22 @@ height: 200px;
 width: 50%;
 }
 
+#Skill2{
+border-radius: 25px;
+display: none;
+background-color: #068b91;
+height: 350px;
+margin: auto;
+width: 50%;
+border: 3px solid;
+padding: 10px;
+}
+#imageSkill2{
+border-radius: 25px;
+height: 200px;
+width: 50%;
+}
+
 
 p{
   font-size: 18px;
